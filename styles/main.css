@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nanum+Gothic&family=Ropa+Sans&display=swap');
+
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-transform: uppercase;
+    margin-top: 100px;
+    height: 90%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #745B99;
+}
+
+header h1 {
+    display: inline-block;
+    margin-right: 80px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+header i {
+    font-size: 60px;
+    border-radius: 60px;
+    box-shadow: 0 0 0 15px #e6e5e5;
+}
