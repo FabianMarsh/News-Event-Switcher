@@ -69,11 +69,6 @@ h2, h5 elements are used for the heading and subheading of the card, using posit
     margin: 0;
     text-align: center;
     width: 100%;
-    color: #fff;
-}
-
-.news-card h2, h5 {
-    position: absolute;
 }
 
 .card h2 {
@@ -86,17 +81,10 @@ h2, h5 elements are used for the heading and subheading of the card, using posit
     text-transform: uppercase;
 }
 
-.card-icon {
-    font-size: 20px;
-    width: 20px;
+/* News cards are the standard card for this project, and don't need too many specific styles */
+
+.news-card h2, h5 {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    border-radius: 50%;
-    background-color: #fff;
-    padding: 15px;
-    display:flex;
-    justify-content: center;
 }
 
 /* News Icons Colours */
@@ -113,7 +101,6 @@ h2, h5 elements are used for the heading and subheading of the card, using posit
     color: #BC2A8D;
 }
 
-
 /* News background image classes */
 
 .laptop-b-img {
@@ -126,6 +113,72 @@ h2, h5 elements are used for the heading and subheading of the card, using posit
 
 .stack-of-papers-b-img{
     background-image: url(../images/stack-of-papers.jpg);
+}
+
+
+/* 
+The events card are similar in most ways to the standard news card 
+but are in need of more detailed stylings, including height adjustment 
+*/
+
+.events-card {
+    height: 380px;
+}
+
+.events-card h1 {
+    margin: 70px auto 50px auto;
+    padding: 40px 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+/* The ring is taken out of normal flow and positioned behind the h1 tag, rgba values are used to make the hover transition simpler */
+
+.ring {
+    border: 30px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+    top: 65px;
+    right: 130px;
+    width:70px;
+    height: 70px;
+}
+
+.events-card h2 {
+    width: 200px;
+    margin: auto;
+}
+
+.events-card h6, i {
+    display: inline;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.events-card h6 {
+    width: fit-content;
+    margin: 0 7px;
+    text-transform: uppercase;
+}
+
+.events-time { 
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-icon {
+    font-size: 20px;
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 15px;
+    display:flex;
+    justify-content: center;
 }
 
 /* Carousel End **********************************************/
