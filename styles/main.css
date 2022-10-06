@@ -31,6 +31,10 @@ header i {
     box-shadow: 0 0 0 15px #e6e5e5;
 }
 
+.not-active {
+    color: #cac8c8;
+}
+
 /* Header End **********************************************/
 
 /* Carousel start **********************************************/
@@ -87,8 +91,23 @@ h5 {
     padding: 15px;
     display:flex;
     justify-content: center;
+
+}
+
+/* News Icons Colours */
+
+.fa-wifi{
     color: #745B99;
 }
+
+.fa-twitter{
+    color: #1DA1F2;
+}
+
+.fa-instagram{
+    color: #BC2A8D;
+}
+
 
 /* News background image classes */
 
