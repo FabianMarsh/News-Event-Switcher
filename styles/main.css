@@ -36,24 +36,25 @@ header i {
 /* Carousel start **********************************************/
 
 .carousel {
+    height: 450px;
+    width: fit-content;
     padding: 0 100px;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 /* Cards */
 /* 
 Cards are made by outling the card dimensions, filling that with a background image to make positioning elements easier, 
 a font awesome i element is used for the icon positioned in the top right using position absolute with position relative on the containing div,
-h2, h5 elements are used for the heading and subheading of the card
+h2, h5 elements are used for the heading and subheading of the card, using position absolute they are brought out of the normal flow, positioned at the bottom of the div 
 */
 .card {
     position: relative;
     width: 380px;
     height: 450px;
     margin-right: 30px;
-}
-
-.laptop-b-img {
-    background-image: url(../images/laptop.jpg);
+    display: inline-block;
 }
 
 .card h2,
@@ -87,6 +88,20 @@ h5 {
     display:flex;
     justify-content: center;
     color: #745B99;
+}
+
+/* News background image classes */
+
+.laptop-b-img {
+    background-image: url(../images/laptop.jpg);
+}
+
+.latest-news-b-img{
+    background-image: url(../images/lastest-news.jpg);
+}
+
+.stack-of-papers-b-img{
+    background-image: url(../images/stack-of-papers.jpg);
 }
 
 /* Carousel End **********************************************/
