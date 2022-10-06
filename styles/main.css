@@ -40,7 +40,11 @@ header i {
 }
 
 /* Cards */
-
+/* 
+Cards are made by outling the card dimensions, filling that with a background image to make positioning elements easier, 
+a font awesome i element is used for the icon positioned in the top right using position absolute with position relative on the containing div,
+h2, h5 elements are used for the heading and subheading of the card
+*/
 .card {
     position: relative;
     width: 380px;
