@@ -83,7 +83,8 @@ h2, h5 elements are used for the heading and subheading of the card, using posit
 
 /* News cards are the standard card for this project, and don't need too many specific styles */
 
-.news-card h2, h5 {
+.news-card h2, 
+.news-card h5 {
     position: absolute;
 }
 
@@ -123,21 +124,40 @@ but are in need of more detailed stylings, including height adjustment
 
 .events-card {
     height: 380px;
+    position: relative;
 }
 
 .events-card h1 {
-    margin: 70px auto 50px auto;
+    margin: 17% auto 12% auto;
     padding: 40px 15px;
     display:flex;
     align-items: center;
     justify-content: center;
     width: fit-content;
+    text-transform: uppercase;
 }
 
-/* The ring is taken out of normal flow and positioned behind the h1 tag, rgba values are used to make the hover transition simpler */
+.events-card:hover {
+    background-color: #281838;
+}
+
+.events-card:hover,
+.events-card:hover .ring {
+    transform: scale(1.1); 
+}
+
+.events-card,
+.events-card:hover .ring {
+    transition: all .2s ease-in-out; 
+}
+
+/* 
+The ring is taken out of normal flow and positioned behind the h1 tag, 
+rgba values are used to make the hover transition simpler 
+*/
 
 .ring {
-    border: 30px solid rgba(255, 255, 255, 0.2);
+    border: 25px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     position: absolute;
     top: 65px;
@@ -151,7 +171,8 @@ but are in need of more detailed stylings, including height adjustment
     margin: auto;
 }
 
-.events-card h6, i {
+.events-card h6, 
+.events-card i {
     display: inline;
     color: rgba(255, 255, 255, 0.2);
 }
