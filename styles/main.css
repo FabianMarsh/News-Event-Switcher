@@ -43,6 +43,7 @@ header i {
     height: 450px;
     width: fit-content;
     padding: 0 100px;
+    margin-bottom: 35px;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -59,18 +60,23 @@ h2, h5 elements are used for the heading and subheading of the card, using posit
     height: 450px;
     margin-right: 30px;
     display: inline-block;
+    white-space: normal;
+    background-color: #745B99;
 }
 
-.card h2,
-h5 {
-    position: absolute;
+.card h1, h2, h5, h6 {
+    color: #fff;
     margin: 0;
     text-align: center;
     width: 100%;
+    color: #fff;
+}
+
+.news-card h2, h5 {
+    position: absolute;
 }
 
 .card h2 {
-    color: #fff;
     bottom: 70px;
 }
 
@@ -80,7 +86,7 @@ h5 {
     text-transform: uppercase;
 }
 
-.card i {
+.card-icon {
     font-size: 20px;
     width: 20px;
     position: absolute;
@@ -91,7 +97,6 @@ h5 {
     padding: 15px;
     display:flex;
     justify-content: center;
-
 }
 
 /* News Icons Colours */
@@ -124,3 +129,22 @@ h5 {
 }
 
 /* Carousel End **********************************************/
+
+/* View All News Footer Start */
+
+.view-all-news {
+    display: flex;
+    justify-content: center;
+}
+
+.view-all-news button {
+    background-color: #281838;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    padding: 15px 45px;
+    cursor: pointer;
+}
+
+/* View All News Footer End */
