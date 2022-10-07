@@ -238,7 +238,7 @@ rgba values are used to make the hover transition simpler
 .border-left {
     border: 3px solid #281838;
     border-right: none;
-    width: 33%;
+    width: 32%;
     height: 576px;
     position: absolute;
     z-index: -1;

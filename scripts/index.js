@@ -28,17 +28,27 @@ function toggleHiddenClass() {
     if (this === events && isInactive) { 
         newsCards.classList.toggle("hidden");
         eventsCards.classList.toggle("hidden");
+        
         leftChevron.classList.toggle("hidden");
         rightChevron.classList.toggle("hidden");
+
         allNews.classList.toggle("hidden");
         fullCalendar.classList.toggle("hidden");
+
+        leftBorder.classList.toggle("hidden");
+        rightBorder.classList.toggle("hidden");
     } else if (this === news && isInactive) {
         newsCards.classList.toggle("hidden");
         eventsCards.classList.toggle("hidden");
+
         rightChevron.classList.toggle("hidden");
         leftChevron.classList.toggle("hidden");
+
         allNews.classList.toggle("hidden");
         fullCalendar.classList.toggle("hidden");
+
+        leftBorder.classList.toggle("hidden");
+        rightBorder.classList.toggle("hidden");
     }   
 }
 
@@ -50,6 +60,9 @@ const leftChevron = document.getElementById("left-chevron");
 const rightChevron = document.getElementById("right-chevron");
 const allNews = document.getElementById("all-news");
 const fullCalendar = document.getElementById("full-calendar");
+const leftBorder = document.getElementById("left-border");
+const rightBorder = document.getElementById("right-border");
+
 
 
 
