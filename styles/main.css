@@ -31,8 +31,9 @@ header i {
     box-shadow: 0 0 0 15px #e6e5e5;
 }
 
-.not-active {
-    color: #cac8c8;
+#events,
+#news {
+    cursor: pointer;
 }
 
 /* Header End **********************************************/
@@ -137,18 +138,23 @@ but are in need of more detailed stylings, including height adjustment
     text-transform: uppercase;
 }
 
+/* Hover and transform */
+
 .events-card:hover {
     background-color: #281838;
 }
 
-.events-card:hover,
-.events-card:hover .ring {
+.events-card:hover {
     transform: scale(1.1); 
+}
+
+.events-card:hover .ring {
+    transform: scale(1.3); 
 }
 
 .events-card,
 .events-card:hover .ring {
-    transition: all .2s ease-in-out; 
+    transition: all .5s ease-in-out; 
 }
 
 /* 
@@ -204,14 +210,14 @@ rgba values are used to make the hover transition simpler
 
 /* Carousel End **********************************************/
 
-/* View All News Footer Start */
+/* View Footer Start */
 
-.view-all-news {
+.view-buttons {
     display: flex;
     justify-content: center;
 }
 
-.view-all-news button {
+.view-buttons button {
     background-color: #281838;
     border-radius: 5px;
     color: #fff;
@@ -221,4 +227,16 @@ rgba values are used to make the hover transition simpler
     cursor: pointer;
 }
 
-/* View All News Footer End */
+/* View Footer End */
+
+/* Script Start **********************************************/
+
+.inactive {
+    color: #cac8c8;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Script End */

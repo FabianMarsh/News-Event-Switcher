@@ -4,59 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/15fc65683f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/main.css">
 
     <title>New Event Switcher</title>
 </head>
 <body>
     <header>
-        <h1>News</h1> 
-        <h1><i class="fa-solid fa-circle-chevron-left"></i></h1> 
-        <h1 class="not-active">Events</h1>
+        <h1 id="news" class="">News</h1> 
+        <h1 id="left-chevron"><i class="fa-solid fa-circle-chevron-left"></i></h1> 
+        <h1 id="right-chevron" class="hidden"><i class="fa-solid fa-circle-chevron-right"></i></h1> 
+        <h1 id="events" class="inactive">Events</h1>
     </header>   
     <!--Carousel Start--> 
     <div class="carousel">
         <!-- News Cards Start -->
-        <div class="card news-card laptop-b-img">
-            <i class="card-icon fa-solid fa-wifi"></i>
-            <h2>Former Student opens first gallery</h2>
-            <h5>June 25</h5>
-        </div>
-        <div class="card news-card latest-news-b-img">
-            <i class="card-icon fa-brands fa-twitter"></i>
-            <h2>
-                It's a legal requirement to have a #SchoolWebsite 
-                but there is a lot of specific content that 
-                Ofsted will be checking for before they come to visit
-            </h2>
-            <h5>June 24</h5>
-        </div>
-        <div class="card news-card stack-of-papers-b-img">
-            <i class="card-icon fa-brands fa-instagram"></i>
-            <h5>June 24</h5>
-        </div>
-        <div class="card news-card laptop-b-img">
-            <i class="card-icon fa-solid fa-wifi"></i>
-            <h2>Former Student opens first gallery</h2>
-            <h5>June 25</h5>
-        </div>
-        <div class="card news-card latest-news-b-img">
-            <i class="card-icon fa-brands fa-twitter"></i>
-            <h2>
-                It's a legal requirement to have a #SchoolWebsite 
-                but there is a lot of specific content that 
-                Ofsted will be checking for before they come to visit
-            </h2>
-            <h5>June 24</h5>
-        </div>
-        <div class="card news-card stack-of-papers-b-img">
-            <i class="card-icon fa-brands fa-instagram"></i>
-            <h5>June 24</h5>
+        <div id="news-cards" class="news">
+            <div class="card news-card laptop-b-img">
+                <i class="card-icon fa-solid fa-wifi"></i>
+                <h2>Former Student opens first gallery</h2>
+                <h5>June 25</h5>
+            </div>
+            <div class="card news-card latest-news-b-img">
+                <i class="card-icon fa-brands fa-twitter"></i>
+                <h2>
+                    It's a legal requirement to have a #SchoolWebsite 
+                    but there is a lot of specific content that 
+                    Ofsted will be checking for before they come to visit
+                </h2>
+                <h5>June 24</h5>
+            </div>
+            <div class="card news-card stack-of-papers-b-img">
+                <i class="card-icon fa-brands fa-instagram"></i>
+                <h5>June 24</h5>
+            </div>
+            <div class="card news-card laptop-b-img">
+                <i class="card-icon fa-solid fa-wifi"></i>
+                <h2>Former Student opens first gallery</h2>
+                <h5>June 25</h5>
+            </div>
+            <div class="card news-card latest-news-b-img">
+                <i class="card-icon fa-brands fa-twitter"></i>
+                <h2>
+                    It's a legal requirement to have a #SchoolWebsite 
+                    but there is a lot of specific content that 
+                    Ofsted will be checking for before they come to visit
+                </h2>
+                <h5>June 24</h5>
+            </div>
+            <div class="card news-card stack-of-papers-b-img">
+                <i class="card-icon fa-brands fa-instagram"></i>
+                <h5>June 24</h5>
+            </div>
         </div>
         <!-- News Cards End -->
         <!-- Events Start -->
-        <div class="events">
+        <div id="events-cards" class="events hidden">
+            <div class="card events-card">
+                <div class="ring"></div>
+                <h1>18 Jul</h1>
+                <h2>Example Event Title Here</h2>
+                <div class="events-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>All Day</h6>
+                </div>
+            </div>
+            <div class="card events-card">
+                <div class="ring"></div>
+                <h1>18 Jul</h1>
+                <h2>Example Event Title Here</h2>
+                <div class="events-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>All Day</h6>
+                </div>
+            </div>
+            <div class="card events-card">
+                <div class="ring"></div>
+                <h1>18 Jul</h1>
+                <h2>Example Event Title Here</h2>
+                <div class="events-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>All Day</h6>
+                </div>
+            </div>
+            <div class="card events-card">
+                <div class="ring"></div>
+                <h1>18 Jul</h1>
+                <h2>Example Event Title Here</h2>
+                <div class="events-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>All Day</h6>
+                </div>
+            </div>
+            <div class="card events-card">
+                <div class="ring"></div>
+                <h1>18 Jul</h1>
+                <h2>Example Event Title Here</h2>
+                <div class="events-time">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>All Day</h6>
+                </div>
+            </div>
             <div class="card events-card">
                 <div class="ring"></div>
                 <h1>18 Jul</h1>
@@ -70,11 +117,15 @@
         <!-- Events End -->
     </div>
     <!--Carousel End--> 
-    <!-- View All News Footer Start-->
-    <div class="view-all-news">
-        <button>View All News</button>
+    <!-- Footer Start-->
+    <div class="view-buttons">
+        <button id="all-news" >View All News</button>
+        <button id="full-calendar" class="hidden">View Full Calendar</button>
     </div>
-    <!-- View All News Footer End-->
+    <!-- Footer End-->
     
 </body>
 </html>
+
+<script src="https://kit.fontawesome.com/15fc65683f.js" crossorigin="anonymous"></script>
+<script src="scripts/index.js"></script>
