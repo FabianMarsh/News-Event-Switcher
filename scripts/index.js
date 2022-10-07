@@ -28,7 +28,7 @@ function toggleHiddenClass() {
     if (this === events && isInactive) { 
         newsCards.classList.toggle("hidden");
         eventsCards.classList.toggle("hidden");
-        
+
         leftChevron.classList.toggle("hidden");
         rightChevron.classList.toggle("hidden");
 
@@ -62,9 +62,6 @@ const allNews = document.getElementById("all-news");
 const fullCalendar = document.getElementById("full-calendar");
 const leftBorder = document.getElementById("left-border");
 const rightBorder = document.getElementById("right-border");
-
-
-
 
 news.addEventListener("click", toggleInactiveClass);
 events.addEventListener("click", toggleInactiveClass);
